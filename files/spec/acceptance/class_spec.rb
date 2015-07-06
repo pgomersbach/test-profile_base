@@ -14,7 +14,7 @@ describe 'profile_base class' do
       # Using puppet_apply as a helper
       it 'should work idempotently with no errors' do
         pp = <<-EOS
-        class { 'profile_puppetmaster': }
+        class { 'profile_base': }
         EOS
 
         # Run it twice and test for idempotency
