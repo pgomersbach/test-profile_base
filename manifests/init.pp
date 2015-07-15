@@ -10,4 +10,5 @@
 class profile_base
 {
     include ntp
+    Apt::Source <| |> -> Package <| |>
 }
