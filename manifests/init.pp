@@ -10,5 +10,6 @@
 class profile_base
 {
     include ntp
+    # update apt sources before installing packages
     Apt::Source <| |> -> Package <| |>
 }
